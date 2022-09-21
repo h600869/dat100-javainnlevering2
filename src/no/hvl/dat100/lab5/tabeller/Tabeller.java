@@ -51,9 +51,10 @@ public class Tabeller {
 			sum = sum + A;
 		}
 		
+		*/
+		
 		return sum;
 		
-		*/
 		
 	}
 
