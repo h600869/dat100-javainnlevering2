@@ -45,8 +45,16 @@ public class Tabeller {
 		}
 		*/
 		
+		/*
+		 * tredje måte å gjøre det på (med en utvidet for - løkke)
+		for (int A:a) {
+			sum = sum + A;
+		}
 		
 		return sum;
+		
+		*/
+		
 	}
 
 	// d)
