@@ -33,12 +33,18 @@ public class Tabeller {
 		}
 		*/
 		
+		
+		/*
+		 * andre måte å gjøre det på (med en while -løkke)
+		 
 		int n =0;
 		while (n<a.length) {
 			sum = sum + a[n];
 			
 			n++;
 		}
+		*/
+		
 		
 		return sum;
 	}
