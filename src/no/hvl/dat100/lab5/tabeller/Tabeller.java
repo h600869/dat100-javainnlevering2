@@ -1,5 +1,7 @@
 package no.hvl.dat100.lab5.tabeller;
 
+import java.util.Arrays;
+
 public class Tabeller {
 
 	// a)
@@ -15,15 +17,20 @@ public class Tabeller {
 	public static String tilStreng(int[] tabell) {
 
 		// TODO
-				throw new UnsupportedOperationException("finnesTall ikke implementert");
-		
-	}
-
+	
+		throw new UnsupportedOperationException("tilStreng ikke implementert");
+	}	
+	
 	// c)
 	public static int summer(int[] tabell) {
 
-		// TODO
-		throw new UnsupportedOperationException("summer ikke implementert");
+		int [] a = tabell;
+		int sum = 0;
+		
+		for (int n =0; n<a.length; n++) {
+			sum = sum + a[n];
+		}
+		return sum;
 	}
 
 	// d)
