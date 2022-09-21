@@ -30,6 +30,7 @@ public class Tabeller {
 		for (int n =0; n<a.length; n++) {
 			sum = sum + a[n];
 		}
+		
 		return sum;
 	}
 
