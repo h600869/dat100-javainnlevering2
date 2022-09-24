@@ -17,7 +17,7 @@ public class Tabeller {
 	// b)
 	public static String tilStreng(int[] tabell) {
 
-		/* int[] tabell = new int[tabel.length];
+		// int[] tabell = new int[tabel.length];
 
 		String s = "";
 
@@ -30,7 +30,6 @@ public class Tabeller {
 		s += tabell[tabell.length - 1];
 		String s2 = "[" + s + "]";
 		return s2;
-		*/
 	}	
 	
 	// c)
@@ -83,7 +82,10 @@ public class Tabeller {
 			}
 			
 		}
+		
 		return fant;
+		
+		
 	}
 
 	// e)
