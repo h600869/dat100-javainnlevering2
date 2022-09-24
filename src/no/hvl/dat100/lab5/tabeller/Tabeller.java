@@ -1,5 +1,6 @@
 package no.hvl.dat100.lab5.tabeller;
 
+import java.lang.reflect.Array;
 import java.util.Arrays;
 
 public class Tabeller {
@@ -16,9 +17,20 @@ public class Tabeller {
 	// b)
 	public static String tilStreng(int[] tabell) {
 
-		// TODO
-	
-		throw new UnsupportedOperationException("tilStreng ikke implementert");
+		/* int[] tabell = new int[tabel.length];
+
+		String s = "";
+
+		for (int i = 0; i < tabell.length - 1; i++) {
+
+			s += tabell[i] + ",";
+
+		}
+
+		s += tabell[tabell.length - 1];
+		String s2 = "[" + s + "]";
+		return s2;
+		*/
 	}	
 	
 	// c)
@@ -28,10 +40,12 @@ public class Tabeller {
 		int sum = 0;
 		/*
 		 * første måte ( med en for løkke)
+		
 		for (int n =0; n<a.length; n++) {
 			sum = sum + a[n];
 		}
 		*/
+		
 		
 		
 		/*
@@ -61,8 +75,15 @@ public class Tabeller {
 	// d)
 	public static boolean finnesTall(int[] tabell, int tall) {
 
-		// TODO
-		throw new UnsupportedOperationException("finnesTall ikke implementert");
+		boolean fant = false;
+		
+		for (int d =0; d<tabell.length; d++) {
+			if(tabell[d] == tall) {
+				fant = true;
+			}
+			
+		}
+		return fant;
 	}
 
 	// e)
