@@ -18,7 +18,9 @@ public class Tabeller {
 	public static String tilStreng(int[] tabell) {
 
 		// int[] tabell = new int[tabel.length];
-
+		if(tabell.length == 0)
+			return "[]";
+		
 		String s = "";
 
 		for (int i = 0; i < tabell.length - 1; i++) {
@@ -104,9 +106,13 @@ public class Tabeller {
 	// f)
 	public static int[] reverser(int[] tabell) {
 
-		// TODO
-		throw new UnsupportedOperationException("reverser ikke implementert");
+		int[] kopi = new int[tabell.length];
 		
+		for(int f = tabell.length;f>0; f--) {
+			kopi[tabell.length-f] = tabell[f-1];
+		}
+		
+		return kopi;
 	}
 
 	// g)
