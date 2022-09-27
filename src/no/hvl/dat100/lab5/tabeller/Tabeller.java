@@ -118,14 +118,40 @@ public class Tabeller {
 	// g)
 	public static boolean erSortert(int[] tabell) {
 
-		// TODO
-		throw new UnsupportedOperationException("erSortert ikke implementert");
+			boolean erSortert =false;
+			
+			if (tabell.length == 1 || tabell.length==0) {
+				return true;
+			}
+			
+			for (int g=1; g<tabell.length; g++) {
+				if(tabell[g]>=tabell[g-1]) {
+					erSortert = true;
+				}
+				else {
+					return false;
+				}
+			}
+			return erSortert;
 	}
 
 	// h)
 	public static int[] settSammen(int[] tabell1, int[] tabell2) {
 
-		// TODO
-		throw new UnsupportedOperationException("settSammen ikke implementert");
+		int tabell3 = tabell1.length + tabell2.length;
+		
+		int[] t3 = new int[tabell3];
+		
+		//første tabell
+		for(int h=0; h<tabell1.length; h++){
+			t3[h] = tabell1[h];
+		}
+		
+		//andre tabell
+		for(int h=0; h<tabell2.length;h++) {
+			t3[tabell1.length + h] = tabell2[h];
+			
+		}
+		return t3;
 	}
 }
