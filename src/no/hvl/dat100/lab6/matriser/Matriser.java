@@ -31,9 +31,17 @@ public class Matriser {
 	// c)
 	public static int[][] skaler(int tall, int[][] matrise) {
 		
-		// TODO
-		throw new UnsupportedOperationException("skaler ikke implementert");
-	
+		int[][] tme = matrise;
+		
+		for (int c = 0; c < matrise.length; c++) {
+
+			for (int C = 0; C < matrise[c].length; C++) {
+				tme[c][C] = matrise[c][C] * tall;
+			}
+		}
+		return tme;
+		
+		//viste ikke hva jeg skulle gjøre her
 	}
 
 	// d)
