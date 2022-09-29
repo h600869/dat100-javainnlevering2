@@ -71,6 +71,7 @@ public class Matriser {
 		// TODO
 		throw new UnsupportedOperationException("speile ikke implementert");
 	
+		
 	}
 
 	// f)
