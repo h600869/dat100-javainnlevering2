@@ -5,15 +5,26 @@ public class Matriser {
 	// a)
 	public static void skrivUt(int[][] matrise) {
 		
-		// TODO
-		throw new UnsupportedOperationException("skrivUt ikke implementert");
+		for(int A=0; A<matrise.length; A++) {
+			for(int a=0; a<matrise[A].length; a++) {
+				System.out.println(matrise[A][a] + " ");
+			}
+			System.out.println();
+		}
 	}
 
 	// b)
 	public static String tilStreng(int[][] matrise) {
 
-		// TODO
-		throw new UnsupportedOperationException("tilStreng ikke implementert");
+		String a = "";
+		for (int b = 0; b < matrise.length; b++) {
+
+			for (int B = 0; B < matrise[0].length; B++) {
+				a += matrise[b][B] + " ";
+			}
+			a += "\n";
+		}
+		return a;
 		
 	}
 
