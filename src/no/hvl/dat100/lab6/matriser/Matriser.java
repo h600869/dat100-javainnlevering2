@@ -31,21 +31,23 @@ public class Matriser {
 	// c)
 	public static int[][] skaler(int tall, int[][] matrise) {
 		
-		int[][] tme = matrise;
+		int[][] tme = new int [matrise.length][matrise[0].length];
 		
 		for (int c = 0; c < matrise.length; c++) {
 
 			for (int C = 0; C < matrise[c].length; C++) {
+				
 				tme[c][C] = matrise[c][C] * tall;
+			
 			}
 		}
 		return tme;
 		
-		//viste ikke hva jeg skulle gjøre her
 	}
 
 	// d)
 	public static boolean erLik(int[][] a, int[][] b) {
+		
 		boolean erLik = true;
 
 		if (a.length == b.length) {

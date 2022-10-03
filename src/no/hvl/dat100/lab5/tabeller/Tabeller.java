@@ -41,24 +41,28 @@ public class Tabeller {
 		int sum = 0;
 		/*
 		 * første måte ( med en for løkke)
+		 */
 		
 		for (int n =0; n<a.length; n++) {
 			sum = sum + a[n];
 		}
-		*/
+		
 		
 		
 		
 		/*
 		 * andre måte å gjøre det på (med en while -løkke)
 		 
+		
 		int n =0;
 		while (n<a.length) {
 			sum = sum + a[n];
 			
 			n++;
 		}
+		
 		*/
+		
 		
 		/*
 		 * tredje måte å gjøre det på (med en utvidet for - løkke)
